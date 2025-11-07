@@ -1,0 +1,45 @@
+{
+  "name": "task-board",
+  "columns": [
+    {
+      "name": "todo",
+      "tasks": [
+        {
+          "id": "T1",
+          "name": "Task 1 - Setup Project",
+          "description": "Initialize repository, configure Nuxt 4 project, and install dependencies."
+        },
+        {
+          "id": "T2",
+          "name": "Task 2 - Design Layout",
+          "description": "Create base layout and navigation structure for the app using <NuxtPage />."
+        }
+      ]
+    },
+    {
+      "name": "in-progress",
+      "tasks": [
+        {
+          "id": "T3",
+          "name": "Task 3 - Build Authentication",
+          "description": "Implement user login and registration using Pinia store for user state."
+        },
+        {
+          "id": "T4",
+          "name": "Task 4 - API Integration",
+          "description": "Connect frontend components with backend API endpoints in /server/api."
+        }
+      ]
+    },
+    {
+      "name": "complete",
+      "tasks": [
+        {
+          "id": "T5",
+          "name": "Task 5 - Setup CI/CD",
+          "description": "Configured GitHub Actions for automatic testing and deployment."
+        }
+      ]
+    }
+  ]
+}
