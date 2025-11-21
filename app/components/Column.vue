@@ -17,8 +17,6 @@ const emit = defineEmits(['isEditing'])
 const boardStore = useBoardStore();
 const { handleDeleteColumn } = boardStore;
 
-const input = ref();
-
 function handleEditColumn(id) {
   emit('isEditing', id)
   nextTick(() => {
@@ -40,7 +38,6 @@ function handleSaveColumn() {
         v-model="column.name"
         @keyup.enter="handleSaveColumn"
         :key="column.id"
-        ref="input"
         id="input"
       />
       <h2 v-else class="font-bold">{{ column.name.toUpperCase() }}</h2>
